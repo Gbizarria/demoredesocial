@@ -1,0 +1,131 @@
+
+.timeline{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: auto;
+    width: 100%;
+    @media (min-width:890px) {
+        padding-left: 80px;
+        width: 60%;
+        padding-bottom: 10px;
+    }
+}
+
+.timeline__title{
+    font-size: 1.25rem;
+    font-weight:bolder;
+}
+.timeline__container__credentials{
+    width: 95%;
+    height:max-content;
+    display: grid;
+    grid-template-columns: 70px auto 1fr ;
+    grid-template-rows: 80px 40px auto;
+    row-gap: 30px;
+}
+.timeline__credentials__img{
+    max-width: 55px;
+    max-height: 65px;
+    width: auto;
+    height: auto;
+    clip-path: circle();
+    grid-column: 1/2;
+    grid-row: 1/1;
+    margin-left: 5px;
+    margin-top: 5px;
+}    
+.timeline__credentials__name{
+        grid-column: 2/2;
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        
+    }
+    .timeline__credentials__role{
+        grid-column: 2/2;
+        grid-row: 1/2;
+        display: flex;
+        align-items:center;
+        margin-top: 20px;
+        font-size: 0.75rem;
+        color: var(--grey-opacity-one);
+}
+.timeline__container__title{
+    grid-column: 1/-1;
+    grid-row: 2;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left:5px ; 
+    align-items: center;
+
+}
+
+.timeline__post__title{
+    font-size: 1.75rem;  
+   
+}
+
+.timeline__container__descript{
+    grid-row: 3/3;
+    grid-column: 1/-1;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-left: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.timeline__post__descript{
+    font-size: 1.25rem;
+    color: var(--grey-color-three);
+} 
+
+.timeline__post__button{
+    grid-column: 1/-1;
+    grid-row: 4/4;
+    width: 90px;
+    height: 40px;
+    font-size: 0.75rem;
+    color: var(--white-fixed);
+    background: var(--grey-color-zero);
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' -10,
+  'opsz' 20,
+
+}
+
+.timeline__Post__favorite{
+    grid-column: 2/2;
+    grid-row: 4/4;
+    margin-left: 40px;
+    align-self: center;
+    color: var(--grey-opacity-one);
+    margin-top: 20px; 
+    cursor: pointer;
+}
+
+.time__line_post_number{
+    grid-column: 2/2;
+    grid-row: 4/4;
+    font-size: 0.875rem;
+    align-self: center;
+    margin-left: 70px;
+    margin-top: 17px;
+}

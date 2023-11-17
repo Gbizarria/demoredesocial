@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede social</title>
+    <script defer src="./src/script/database.js"></script>
+    <link rel="stylesheet" href="./src/style/globalStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,-10" />
+    
+</head>
+<body>
+    <header>
+        <h1 class="header__text">TechPosters</h1>
+        <button name="post" value="Enviar" class="header__button">sair</button>
+    </header>
+
+    <main>
+        
+        <section class="postingarea">
+            <div class="posting__credentials ">
+                <img class="credentials__img" src="./src/asset/img/pngegg.png" alt="Imagem User">
+                <h2 class="credentials__name">Gustavo Bizarria</h2>
+                <p class="credentials__ocupation">Full stack developer</p>
+            </div>
+            
+                <input class="posting__title posting__title--focus" type="text" placeholder="Digitar o título do post"  >
+
+                <textarea  class="posting__descript posting__descript--focus" placeholder="Digitar a descrição do post" id="" cols="30" rows="10" maxlength="800"></textarea>
+                <button  class="posting__button"><p class="posting__button__text">Postar</p></button>
+       
+        </section>
+
+         <aside>
+             <h1 class="suggest__title">Sugestões para você seguir</h1>
+             <section class="suggest">
+
+                    <div class="suggest__container_card">
+                        <img class="suggest__cards__img" src="https://images.pexels.com/photos/4458549/pexels-photo-4458549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagem card">
+                        <section class="card__texts">
+                            <h2 class="suggest__cards__name">Marcella Bizarria</h2>
+                            <p class="suggest__cards__ocupation">Front end Engineer</p>
+                        </section>
+                        <button class="suggest__cards__button">Seguir</button>
+                </div>
+                 <div class="suggest__container_card">
+                    <img class="suggest__cards__img" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagem card">
+                   <section class="card__texts">
+                       <h2 class="suggest__cards__name">Leonardo Bizarria</h2>
+                       <p class="suggest__cards__ocupation">Back end Engineer</p>
+                   </section>
+                    <button class="suggest__cards__button">Seguir</button>
+                </div>
+                 <div class="suggest__container_card">
+                    <img class="suggest__cards__img" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagem card">
+                   <section class="card__texts">
+                       <h2 class="suggest__cards__name">Isabella Bizarria</h2>
+                       <p class="suggest__cards__ocupation">Front end Engineer</p>
+                   </section>
+                    <button  class="suggest__cards__button">Seguir</button>
+                </div>
+                 <div class="suggest__container_card">
+                    <img class="suggest__cards__img" src="https://images.pexels.com/photos/4467687/pexels-photo-4467687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagem card">
+                   <section class="card__texts">
+                       <h2 class="suggest__cards__name">Rafaella Bizarria</h2>
+                       <p class="suggest__cards__ocupation">Full stack Developer</p>
+                   </section>
+                    <button class="suggest__cards__button">Seguir</button>
+                </div>
+             </section>
+         </aside>
+        </main>
+         <section class="timeline">
+            <h2 class="timeline__title"> Posts</h2>
+         </section>
+
+         <dialog id="ModalPost"> 
+           <div class="container__modalPost">
+            <button class="Close__modalPost"> x </button>
+           </div>
+         </dialog>
+
+</body>
+</html>

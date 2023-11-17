@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url(.//header.css);
+@import url(./main.css); 
+@import url(./aside.css);
+@import url(./posts.css);
+@import url(./modalpost.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-size: 62.5%; 
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+
+:root{
+    --brand-color-one: #4263EB;
+    --brand-color-two: #364FC7;
+
+    --grey-color-zero:#0A0c0d;
+    --grey-color-one: #212529;
+    --grey-color-two: #495057 ;
+    --grey-color-three: #868E96;
+    --grey-color-four:  #DEE2E6;
+    --grey-color-five: #F8F9fA;
+    
+    
+    --grey-opacity-one: rgba(33,37,41,0.5);
+    --white-fixed: #FFFFFF;
+
+    --feedback-like: #d7443e;   
+}

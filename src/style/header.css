@@ -1,0 +1,30 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;
+    background-color: var(--grey-color-one);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+
+}
+
+.header__text{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--white-fixed) ;
+    margin-left: 20px;
+    font-weight: 500;
+    
+}
+
+.header__button{
+    border: none;
+    background:none;
+    color: var(--white-fixed) ;
+    font-size: 0.875rem;
+    margin-right: 20px;
+    font-weight: 300;
+}

@@ -1,0 +1,48 @@
+#ModalPost{
+    margin: 0 auto;
+    width: 100%;
+   max-height: fit-content;
+   border-radius: 20px;
+   border: none;
+   padding: 2px 0px  0px 8px;
+   @media (min-width:890px) {
+    width: 40%;
+    margin-top: 90px;
+    border-radius: 10px;
+}
+}
+
+.Close__modalPost{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 15px;
+    border: none;
+    clip-path: circle();
+    width: 80px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    background: var(--grey-color-five);
+    color: var(--grey-opacity-one);
+
+}
+#ModalPost > .timeline__container__credentials{
+    row-gap: 10px;
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 10px;
+    height: fit-content;
+   
+}
+
+#ModalPost > .timeline__container__credentials  .timeline__post__title {
+    font-size: 1.25rem;
+}
+
+#ModalPost >.timeline__container__credentials .timeline__post__descript {
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+}
